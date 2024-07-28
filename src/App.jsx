@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ThemeProvider } from "@/components/theme-provider"
 import {ModeToggle} from "@/components/mode-toggle"
+import {Navbar} from "./components/Navbar"
 
 function App() {
 
@@ -12,7 +13,9 @@ function App() {
            <div className="w-full m-auto inline-flex justify-center items-center">
             <ModeToggle>dark</ModeToggle>
            </div>
-           <p>tets</p>
+           <div className="w-full flex flex-col justify-center items-center mt-[65px]">
+            <Navbar/>
+           </div>
            </div>
         </div>
       </ThemeProvider>
