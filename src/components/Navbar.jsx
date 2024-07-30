@@ -5,13 +5,15 @@ import {
   } from "@/components/ui/avatar"
   import { Badge } from "@/components/ui/badge"
   import { Linkedin, Facebook, Instagram,Github, Dot} from 'lucide-react';
+  import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+
 
 export function Navbar() {
 
   return (
     <>
         <div className="w-full flex flex-row justify-between items-center">
-        <div className="w-1/6 h-[160px] inline-flex justify-between items-center flex-col">
+        <div className="md:w-1/6 w-2/6 md:h-[160px] h-[100px] inline-flex justify-between items-center flex-col">
         <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
             <AvatarFallback>CN</AvatarFallback>
@@ -22,18 +24,20 @@ export function Navbar() {
         </div>
 
         </div>
-        <div className="md:w-5/6 w-4/6 h-[130px] flex flex-col justify-between items-start">
-            <div className="font-bold text-3xl">
+        <div className="md:w-5/6 w-4/6 md:h-[130px] h-[100px] flex flex-col justify-between items-start">
+            <div className="font-bold md:text-3xl text-xl">
                 Abderrahim Ait Oufassi
             </div>
-            <div className="font-bold text-xl">
+            <div className="font-bold md:text-xl text-lg">
                 FullStack Developer
             </div>
             <div className="font-bold text-xl flex flex-row justify-between items-center w-1/4 text-blue">
-            <Linkedin/>
-            <Facebook />
-            <Instagram />
-            <Github />
+            <ToggleGroup type="single">
+              <ToggleGroupItem value="a"><Linkedin/></ToggleGroupItem>
+              <ToggleGroupItem value="b"><Facebook /></ToggleGroupItem>
+              <ToggleGroupItem value="c"><Instagram /></ToggleGroupItem>
+              <ToggleGroupItem value="c"><Github /></ToggleGroupItem>
+            </ToggleGroup>
             </div>
         </div>
         </div>

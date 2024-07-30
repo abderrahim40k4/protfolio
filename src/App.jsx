@@ -5,6 +5,7 @@ import {Navbar} from "./components/Navbar"
 import { Facts } from "./components/factsAbout"
 import { Tab } from "./components/Tabs"
 import { About } from "./components/About"
+import { Footer } from "./components/footer"
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
            <div className="w-full flex flex-col justify-center items-center mt-[32px]">
             <Tab/>
            </div>
+           <Footer/>
            </div>
         </div>
       </ThemeProvider>

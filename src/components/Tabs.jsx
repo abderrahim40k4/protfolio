@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-
+import { Portfolio } from "./Protfolio"
 export function Tab() {
 
     return (
@@ -9,7 +9,12 @@ export function Tab() {
   <TabsList>
     <TabsTrigger value="Portfolio">Portfolio</TabsTrigger>
     <TabsTrigger value="Skills">Skills</TabsTrigger>
+    
   </TabsList>
+  <TabsContent value="Portfolio">
+    <Portfolio/>
+  </TabsContent>
+  <TabsContent value="Skills">Change your password here.</TabsContent>
 
 </Tabs>
           </div>
