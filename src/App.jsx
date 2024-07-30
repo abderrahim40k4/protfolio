@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button"
 import { ThemeProvider } from "@/components/theme-provider"
 import {ModeToggle} from "@/components/mode-toggle"
 import {Navbar} from "./components/Navbar"
+import { Facts } from "./components/factsAbout"
+import { Tab } from "./components/Tabs"
+import { About } from "./components/About"
 
 function App() {
 
@@ -15,6 +18,15 @@ function App() {
            </div>
            <div className="w-full flex flex-col justify-center items-center mt-[65px]">
             <Navbar/>
+           </div>
+           <div className="w-full flex flex-col justify-center items-center mt-[65px]">
+            <Facts/>
+           </div>
+           <div className="w-full flex flex-col justify-center items-center mt-[65px]">
+            <About/>
+           </div>
+           <div className="w-full flex flex-col justify-center items-center mt-[65px]">
+            <Tab/>
            </div>
            </div>
         </div>
