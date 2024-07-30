@@ -16,16 +16,16 @@ function App() {
            <div className="w-full m-auto inline-flex justify-center items-center">
             <ModeToggle>dark</ModeToggle>
            </div>
-           <div className="w-full flex flex-col justify-center items-center mt-[65px]">
+           <div className="w-full flex flex-col justify-center items-center mt-[32px]">
             <Navbar/>
            </div>
-           <div className="w-full flex flex-col justify-center items-center mt-[65px]">
+           <div className="w-full flex flex-col justify-center items-center mt-[32px]">
             <Facts/>
            </div>
-           <div className="w-full flex flex-col justify-center items-center mt-[65px]">
+           <div className="w-full flex flex-col justify-center items-center mt-[32px]">
             <About/>
            </div>
-           <div className="w-full flex flex-col justify-center items-center mt-[65px]">
+           <div className="w-full flex flex-col justify-center items-center mt-[32px]">
             <Tab/>
            </div>
            </div>
