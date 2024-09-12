@@ -1,30 +1,48 @@
 import {
-    HoverCard,
-    HoverCardContent,
-    HoverCardTrigger,
-  } from "@/components/ui/hover-card"
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
+import { Button } from './ui/button'
+import { PROJECTS } from '../constants'
+
 
 export function Portfolio() {
 
-    return (
-      <>
-          <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-4 md:p-10 p-4 rounded-xl text-xl font-normal">
-            <div className="w-full md:h-[226px] h-[230px] inline-flex justify-center items-center rounded-md bg-primary-foreground hover:bg-blue/55 hover:before:content-['project'] cursor-pointer">
+  return (
+    <>
+      <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-4 md:p-10 p-4 rounded-xl text-xl font-normal">
+        {PROJECTS.map((project, index) => (
+          <div className="w-full rounded-md bg-primary-foreground hover:bg-blue/55 cursor-pointer p-4">
+            <div key={index} className='mb-4 flex flex-wrap '>
+              <div className="w-1/4">
+                <img src={project.image} alt={project.title} width={100} height={100} className='mb-2 rounded' />
+              </div>
+
+              <div className="w-3/4">
+                <h6 className='mb-2 font-semibold'>{project.title}</h6>
+                <h6 className='mb-4 text-neutral-500'>{project.description}</h6>
+                <h6 className='mb-4 font-medium'>{
+
+                }</h6>
+
+              </div>
             </div>
-            <div className="w-full md:h-[226px] h-[230px] inline-flex justify-center items-center rounded-md bg-primary-foreground hover:bg-blue/55 hover:before:content-['project'] cursor-pointer">
+            <div className="w-full">
+            {
+              
+              project.technologies.map((tech, index) => (
+                <Button default key={index} className='mr-2 mt-4 rounded py-1 px-2 text-sm font-medium text-blue mb-2 bg-secondary hover:text-secondary hover:bg-primary-foreground'>
+                {tech}
+              </Button>
+              ))
+            }
             </div>
-            <div className="w-full md:h-[226px] h-[230px] inline-flex justify-center items-center rounded-md bg-primary-foreground hover:bg-blue/55 hover:before:content-['project'] cursor-pointer">
-            </div>
-            <div className="w-full md:h-[226px] h-[230px] inline-flex justify-center items-center rounded-md bg-primary-foreground hover:bg-blue/55 hover:before:content-['project'] cursor-pointer">
-            </div>
-            <div className="w-full md:h-[226px] h-[230px] inline-flex justify-center items-center rounded-md bg-primary-foreground hover:bg-blue/55 hover:before:content-['project'] cursor-pointer">
-            </div>
-            <div className="w-full md:h-[226px] h-[230px] inline-flex justify-center items-center rounded-md bg-primary-foreground hover:bg-blue/55 hover:before:content-['project'] cursor-pointer">
-            </div>
-            
-            
           </div>
-      </>
-    )
-  }
-  
+
+
+        ))}
+      </div>
+    </>
+  )
+}

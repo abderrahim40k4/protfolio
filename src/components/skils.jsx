@@ -155,9 +155,6 @@ export function Skils() {
             <div className="rounded-2xl border-4 border-neutral-800 p-4">
                 <TbBrandMysql className='text-7xl text-blue-500'/>
             </div>
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <TbBrandMysql className='text-7xl text-blue-500'/>
-            </div>
         </div>
 
     </div>
