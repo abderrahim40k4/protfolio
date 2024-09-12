@@ -1,5 +1,6 @@
 import React from 'react'
 import { EXPERIENCES } from '../constants'
+import { Button } from './ui/button'
 const Exprience = () => {
   return (
     <div className='border-b border-neutral-900 pb-4'>
@@ -7,7 +8,7 @@ const Exprience = () => {
         <div className="">
            {EXPERIENCES.map((exprience, index) => (
              <div className='flex flex-wrap items-center lg:justify-center mb-4' key={index}> 
-             <div className="w-full lg:w-1/2">
+             <div className="w-full">
                  <p className='mb-4 text-neutral-400 text-sm'>{exprience.year}</p>
              </div>
              <div className="w-full max-w-xl lg:w-3/4">
@@ -22,9 +23,9 @@ const Exprience = () => {
                 </p>
                 {
                     exprience.technologies.map((tech, index) => (
-                        <span key={index} className='mr-2 mt-4 rounded bg-neutral-900 py-1 px-2 text-sm font-medium text-blue mb-2'>
+                          <Button default key={index} className='mr-2 mt-4 rounded py-1 px-2 text-sm font-medium text-blue mb-2 bg-primary-foreground hover:text-secondary hover:bg-secondary-foreground'>
                             {tech}
-                        </span>
+                          </Button>
                     ))
                 }
              </div>

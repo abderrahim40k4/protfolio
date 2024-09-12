@@ -11,7 +11,7 @@ export function Tab() {
   <TabsList>
     <TabsTrigger value="Portfolio">Portfolio</TabsTrigger>
     <TabsTrigger value="Skills">Skills</TabsTrigger>
-    <TabsTrigger value="Exprience">exprienc</TabsTrigger>   
+    <TabsTrigger value="Exprience">Exprience</TabsTrigger>   
   </TabsList>
   <TabsContent value="Portfolio">
     <Portfolio/>
