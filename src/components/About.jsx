@@ -3,10 +3,10 @@ import { Button } from "./ui/button"
 import { ArrowDownToDot } from 'lucide-react';
 
 import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
 import { CONTACT } from "@/constants";
 
 export function About() {
@@ -17,18 +17,18 @@ export function About() {
         <Button className="w-full lg:w-5/12 md:p-8 p-2 text-sm md:text-xl bg-blue/100">Download CV <ArrowDownToDot size={16} className="mx-4" /></Button>
         
           <Button className="w-full lg:w-5/12 md:p-8 p-2 text-sm md:text-xl bg-primary-foreground text-primary hover:text-secondary hover:bg-secondary-foreground">
-          <HoverCard>
-          <HoverCardTrigger>
+          <Popover>
+          <PopoverTrigger>
             Get in Touch
-          </HoverCardTrigger>
-          <HoverCardContent>
+          </PopoverTrigger>
+          <PopoverContent>
           <div className="text-center tracking-tight text-xs lg:text-sm font-medium">
                 <p className="my-4">Address: { CONTACT.address}</p>
                 <p className="my-4">Phone: { CONTACT.phoneNo}</p>
                 <p className="my-4 border-b border-blue">Email: { CONTACT.email}</p>
             </div>
-          </HoverCardContent>
-        </HoverCard>
+          </PopoverContent>
+        </Popover>
           </Button>
        
       </div>
