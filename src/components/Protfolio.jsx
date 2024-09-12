@@ -13,7 +13,7 @@ export function Portfolio() {
     <>
       <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-4 p-2 lg:p-4 rounded-xl lg:text-xl text-xs font-normal">
         {PROJECTS.map((project, index) => (
-          <div className="w-full rounded-md bg-primary-foreground hover:bg-blue/55 cursor-pointer p-4">
+          <div className="w-full rounded-md bg-primary-foreground hover:bg-blue/55 cursor-pointer p-4" key={index}>
             <div key={index} className='mb-4 flex flex-wrap items-start gap-2'>
               <div className="w-1/4">
                 <img src={project.image} alt={project.title} width={100} height={100} className='mb-2 rounded' />
