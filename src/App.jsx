@@ -12,7 +12,7 @@ function App() {
   return (
     <>
        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <div className="w-full inline-flex justify-center items-center flex-col md:pt-16 p-8">
+        <div className="w-full inline-flex justify-center items-center flex-col md:pt-16 p-4">
            <div className="md:w-5/6 w-full">
            <div className="w-full m-auto inline-flex justify-center items-center">
             <ModeToggle>dark</ModeToggle>

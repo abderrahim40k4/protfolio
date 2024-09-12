@@ -26,10 +26,10 @@ export function Navbar() {
 
         </div>
         <div className="md:w-5/6 w-4/6 md:h-[130px] h-[100px] flex flex-col justify-between items-start">
-            <div className="font-bold md:text-3xl text-xl">
+            <div className="font-bold md:text-3xl text-sm">
                 Abderrahim Ait Oufassi
             </div>
-            <div className="font-bold md:text-xl text-lg">
+            <div className="font-bold md:text-xl text-xs">
                 FullStack Developer
             </div>
             <div className="font-bold text-xl flex flex-row justify-between items-center w-1/4 text-blue">

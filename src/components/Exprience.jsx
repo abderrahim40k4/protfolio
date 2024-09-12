@@ -23,7 +23,7 @@ const Exprience = () => {
                 </p>
                 {
                     exprience.technologies.map((tech, index) => (
-                          <Button default key={index} className='mr-2 mt-4 rounded py-1 px-2 text-sm font-medium text-blue mb-2 bg-primary-foreground hover:text-secondary hover:bg-secondary-foreground'>
+                          <Button default key={index} className='mr-2 mt-4 rounded py-1 px-2 text-xs lg:text-sm font-medium text-blue mb-2 bg-primary-foreground hover:text-secondary hover:bg-secondary-foreground'>
                             {tech}
                           </Button>
                     ))
