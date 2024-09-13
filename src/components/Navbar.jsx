@@ -37,7 +37,7 @@ export function Navbar() {
               <ToggleGroupItem value="a"><Linkedin /></ToggleGroupItem>
               <ToggleGroupItem value="b"><Facebook /></ToggleGroupItem>
               <ToggleGroupItem value="c"><Instagram /></ToggleGroupItem>
-              <ToggleGroupItem value="c"><Github /></ToggleGroupItem>
+              <ToggleGroupItem value="d"><Github /></ToggleGroupItem>
             </ToggleGroup>
           </div>
         </div>
