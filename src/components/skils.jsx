@@ -153,7 +153,7 @@ export function Skils() {
             <DiMongodb className='text-7xl text-emerald-600' />
           </div>
           <div className="rounded-2xl border-4 border-neutral-800 p-4">
-            <TbBrandMysql className='text-7xl text-blue-500' />
+            <TbBrandMysql className='text-7xl text-blue' />
           </div>
         </div>
 
