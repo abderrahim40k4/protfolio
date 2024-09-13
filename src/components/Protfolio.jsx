@@ -29,14 +29,14 @@ export function Portfolio() {
               </div>
             </div>
             <div className="w-full">
-            {
-              
-              project.technologies.map((tech, index) => (
-                <Button default key={index} className='mr-2 mt-2 rounded py-1 px-2 text-xs lg:text-sm font-medium text-blue mb-2 bg-secondary hover:text-secondary hover:bg-primary-foreground'>
-                {tech}
-              </Button>
-              ))
-            }
+              {
+
+                project.technologies.map((tech, index) => (
+                  <Button default key={index} className='mr-2 mt-2 rounded py-1 px-2 text-xs lg:text-sm font-medium text-blue mb-2 bg-secondary hover:text-secondary hover:bg-primary-foreground'>
+                    {tech}
+                  </Button>
+                ))
+              }
             </div>
           </div>
 

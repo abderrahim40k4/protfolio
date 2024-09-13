@@ -30,10 +30,10 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "Vue", "Laravel", "MySQL"],
   },
   {
-    title: "authontiction form",
+    title: "Authontiction form",
     image: project2,
     description:
-      "an smale project bulid to atchive the auth process, with features such as securty test and save informantion",
+      "An smale project bulid to atchive the auth process, with features such as securty test and save informantion",
     technologies: ["HTML", "Tailwind", "React", "mongDB", "Nextjs"],
   },
   {
@@ -47,7 +47,7 @@ export const PROJECTS = [
     title: "Gimini-Clone",
     image: project4,
     description:
-      "a clone of Gimini IA, with features like rich text editing, commenting, and user profiles.",
+      "clone of Gimini IA, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Rect", "Next", "Typescript"],
   },
 ];
