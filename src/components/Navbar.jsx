@@ -19,8 +19,8 @@ export function Navbar() {
             <AvatarImage src={pfp} alt="pfp" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          <div className="flex flex-row justify-evenly items-center">
-            <Dot color="#1eff00" strokeWidth={3} className="p-0 m-0" />
+          <div className="flex flex-row justify-evenly items-center clip-path-none">
+            <Dot color="#1eff00" strokeWidth={3} className="p-0 m-0 clip-path-none" />
             <Badge variant="default">Available</Badge>
           </div>
 
@@ -34,10 +34,10 @@ export function Navbar() {
           </div>
           <div className="font-bold text-xl flex flex-row justify-between items-center w-1/4 text-blue">
             <ToggleGroup type="single">
-              <ToggleGroupItem value="a"><Linkedin /></ToggleGroupItem>
-              <ToggleGroupItem value="b"><Facebook /></ToggleGroupItem>
-              <ToggleGroupItem value="c"><Instagram /></ToggleGroupItem>
-              <ToggleGroupItem value="d"><Github /></ToggleGroupItem>
+              <ToggleGroupItem value="a" className="bg-primary-foreground clip-path-none"><Linkedin /></ToggleGroupItem>
+              <ToggleGroupItem value="b" className="bg-primary-foreground clip-path-none"><Facebook /></ToggleGroupItem>
+              <ToggleGroupItem value="c" className="bg-primary-foreground clip-path-none"><Instagram /></ToggleGroupItem>
+              <ToggleGroupItem value="d" className="bg-primary-foreground clip-path-none"><Github /></ToggleGroupItem>
             </ToggleGroup>
           </div>
         </div>

@@ -7,13 +7,10 @@ const Exprience = () => {
   <h2 className="my-20 text-4xl text-center">Work History</h2>
   
   {/* Neon rotating border */}
-  <div className="absolute inset-0 flex justify-center items-center">
-    <div className="absolute w-full h-full border border-blue-500 rounded-xl animate-spin-slow" style={{ filter: 'blur(8px)' }}></div>
-  </div>
   
   <div className="relative">
     {EXPERIENCES.map((experience, index) => (
-      <div className='flex flex-wrap items-center lg:justify-center mb-4' key={index}> 
+      <div className='flex flex-wrap items-center lg:justify-center mb-4 clip' key={index}> 
         <div className="w-full">
           <p className='mb-4 text-neutral-400 text-sm'>{experience.year}</p>
         </div>

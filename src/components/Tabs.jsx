@@ -9,9 +9,9 @@ export function Tab() {
       <div className="w-full flex flex-row justify-evenly items-center p-5">
         <Tabs defaultValue="Portfolio" className="w-full py-4">
           <TabsList>
-            <TabsTrigger value="Portfolio">Portfolio</TabsTrigger>
-            <TabsTrigger value="Skills">Skills</TabsTrigger>
-            <TabsTrigger value="Exprience">Exprience</TabsTrigger>
+            <TabsTrigger value="Portfolio" className="clip">Portfolio</TabsTrigger>
+            <TabsTrigger value="Skills" className="clip">Skills</TabsTrigger>
+            <TabsTrigger value="Exprience" className="clip">Exprience</TabsTrigger>
           </TabsList>
           <TabsContent value="Portfolio">
             <Portfolio />

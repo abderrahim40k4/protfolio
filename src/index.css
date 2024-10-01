@@ -61,27 +61,13 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border ;
   }
   body {
     @apply bg-background text-foreground;
   }
 }
 
-@keyframes lightBorder {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 100% 0;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0 100%;
-  }
-  100% {
-    background-position: 0 0;
-  }
+.clip{
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
 }
