@@ -34,7 +34,7 @@ export const PROJECTS = [
     image: project2,
     description:
       "An smale project bulid to atchive the auth process, with features such as securty test and save informantion",
-    technologies: ["HTML", "Tailwind", "React", "mongDB", "Nextjs"],
+    technologies: ["HTML", "Tailwind", "React", "mongoDB", "Nextjs"],
   },
   {
     title: "Portfolio Website",
