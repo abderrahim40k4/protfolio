@@ -6,9 +6,9 @@ const Exprience = () => {
    <div className='relative border-b border-neutral-900 pb-4'>
   <h2 className="my-20 text-4xl text-center">Work History</h2>
   
-  <div className="relative flex flex-col w-full justify-between items-center">
+  <div className="relative flex flex-shrink gap-4 w-full justify-evenly items-start">
     {EXPERIENCES.map((experience, index) => (
-      <div className='flex flex-wrap items-center lg:justify-center mb-4 clip bg-primary-foreground md:w-4/5 w-full p-2' key={index}> 
+      <div className='flex flex-col h-96 items-center justify-start mb-4 clip bg-primary-foreground md:w-2/5 w-full p-2' key={index}> 
         <div className="w-full">
           <p className='mb-4 text-neutral-400 text-sm'>{experience.year}</p>
         </div>
