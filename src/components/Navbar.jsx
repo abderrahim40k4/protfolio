@@ -17,7 +17,7 @@ export function Navbar() {
         <div className="md:w-1/6 w-2/6 md:h-[160px] h-[100px] inline-flex justify-between items-center flex-col">
           <Avatar>
             <AvatarImage src={pfp} alt="pfp" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>Abderrahim</AvatarFallback>
           </Avatar>
           <div className="flex flex-row justify-evenly items-center clip-path-none">
             <Dot color="#1eff00" strokeWidth={3} className="p-0 m-0 clip-path-none" />
